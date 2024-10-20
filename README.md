@@ -1,23 +1,9 @@
-Npm Libraries 
-
-Calender
-
-npm install @fullcalendar/timegrid @fullcalendar/list
-npm install @fullcalendar/core @fullcalendar/interaction @fullcalendar/daygrid
-
-Frontawsom
-
-
-npm i --save @fortawesome/fontawesome-svg-core
-npm i --save @fortawesome/free-solid-svg-icons
-npm i --save @fortawesome/free-regular-svg-icons
-npm i --save @fortawesome/free-brands-svg-icons
-npm i --save @fortawesome/react-fontawesome@latest
-
-Bootswatch
-
-
-npm install bootswatch
-import "bootswatch/dist/lux/bootstrap.min.css";
-
-
+![screenshot-1729407662866](https://github.com/user-attachments/assets/8efd522f-7890-4ffe-b97e-f2baecfc74f5)
+![screenshot-1729407649088](https://github.com/user-attachments/assets/366dc2f4-a4d8-4b19-8423-17248bda30af)
+![screenshot-1729407635628](https://github.com/user-attachments/assets/b8e8883c-8259-4544-8472-3ad85c5d1083)
+![screenshot-1729407620169](https://github.com/user-attachments/assets/b8102c2d-de31-4749-a79f-5cb39f7e5ee4)
+![screenshot-1729407603017](https://github.com/user-attachments/assets/1709a39b-7fa0-4fb6-bcc9-077bc963d51b)
+![screenshot-1729407359290](https://github.com/user-attachments/assets/36aed8b6-0422-4c95-ba46-6a13d2562f0d)
+![screenshot-1729407330886](https://github.com/user-attachments/assets/69ffcf04-a59d-4216-ad3e-0f4e3030c03f)
+![screenshot-1729407303336](https://github.com/user-attachments/assets/3f87cf3e-ffa9-4790-9fd0-b567ed7bd60e)
+![screenshot-1729406499987](https://github.com/user-attachments/assets/a02e4094-7ecb-4fb9-ab38-6d2661b83309)
