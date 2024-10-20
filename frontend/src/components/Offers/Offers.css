@@ -1,0 +1,112 @@
+.offers {
+  margin: 30px 0px;
+  padding: 100px 0px;
+  background-color: #f7f7f7;
+}
+
+.container-1 {
+  overflow: auto;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.card-f {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  transition: transform 0.3s ease;
+  overflow: hidden; /* Ensure content doesn't overflow the card */
+}
+
+.card-f:hover {
+  transform: scale(1.05);
+}
+
+.container-f:hover > :not(:hover) {
+  opacity: 0.3;
+}
+
+.title-f {
+  width: 100%;
+  display: inline-block;
+  word-break: break-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Slider */
+.card-2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #f2f2f2;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card-2:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.container-2 {
+  padding: 0px;
+}
+
+.offer-banner {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block; /* Ensure the image takes up the full space */
+  width: 100%;
+  height: auto;
+}
+
+.offer-banner-wrapper {
+  overflow: hidden; /* Hide the part of the image that overflows */
+}
+
+.offer-banner-wrapper:hover .offer-banner {
+  transform: scale(1.1); /* Scale up the image */
+}
+
+@media (max-width:900px) {
+  .card-f {
+    display: none;
+  }
+
+  .card-2 {
+    display: flex;
+  }
+
+  .offers {
+    padding: 20px 0px;
+    margin: 10px 2px;
+  }
+}
+
+@media (max-width:768px) {
+  .container-f {
+    display: block;
+  }
+}
+
+@media (max-width:468px) {}

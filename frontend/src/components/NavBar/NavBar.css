@@ -1,0 +1,103 @@
+nav {
+    background-color: #222222;
+}
+
+/* navbar logo */
+.logo,
+.logo h1 {
+    padding-top: 10px;
+    font-family: "Benne", serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #ffd365;
+}
+
+.logo p {
+    font-size: 15px;
+}
+
+.contact {
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+
+/* nav links */
+.menu__link {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 2;
+    position: relative;
+}
+
+.menu__link::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    transition: transform .4s, opacity .4s;
+    opacity: 0;
+}
+
+.menu__link:hover::before {
+    transform: translateY(-.25rem);
+    opacity: 1;
+}
+
+@media (max-width:1366px) {
+
+    .logo,
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .contact li {
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width:1025px) {
+
+    .logo,
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .menu__link {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:900px) {
+    .contact {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:620px) {
+
+    .logo,
+    .logo h1 {
+        font-size: 13px;
+    }
+
+
+    .logo p {
+        font-size: 10px;
+    }
+
+    .button {
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .contact {
+        display: none;
+    }
+}

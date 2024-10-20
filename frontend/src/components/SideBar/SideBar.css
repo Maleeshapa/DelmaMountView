@@ -1,0 +1,136 @@
+Global Styles
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar Styles */
+#sidebar {
+  width: 70px;
+  min-width: 70px;
+  z-index: 1000;
+  transition: all 0.25s ease-in-out;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto; 
+  overflow-x: hidden;
+}
+
+#sidebar.expand {
+  width: 260px;
+  min-width: 260px;
+}
+
+.toggle-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  padding: 1rem 1.5rem;
+}
+
+.toggle-btn svg {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.sidebar-logo {
+  margin: auto 0;
+}
+
+.sidebar-logo a {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-decoration: none
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+  display: none;
+}
+
+.sidebar-nav {
+  padding: 2rem 0;
+  flex: 1 1 auto;
+}
+
+a.sidebar-link {
+  padding: 0.625rem 1.625rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  border-left: 3px solid transparent;
+  text-decoration: none;
+}
+
+a.sidebar-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-left: 3px solid #3b7ddd;
+}
+
+.sidebar-link svg {
+  font-size: 1.1rem;
+  margin-right: 0.75rem;
+}
+
+a.sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+  border-left: 3px solid #3b7ddd;
+}
+
+.sidebar-item {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Footer */
+.sidebar-footer {
+  margin-bottom: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* On smaller screens, auto-expand when clicked */
+  #sidebar {
+    position: relative;
+    min-height: auto;
+    height: auto;
+    width: 100%;
+    z-index: 999;
+  }
+
+  #sidebar.expand {
+    width: 100%;
+  }
+
+  .toggle-btn {
+    padding: 0.75rem;
+  }
+
+  .sidebar-nav {
+    padding: 1rem 0;
+  }
+
+  a.sidebar-link {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+  }
+
+  .sidebar-logo a {
+    font-size: 1rem;
+  }
+}

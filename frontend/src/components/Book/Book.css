@@ -1,0 +1,404 @@
+/* checkout */
+.check {
+  padding: 20px 10px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.input_container {
+  position: relative;
+  margin: 0px auto;
+  width: 200px;
+  margin-top: 40px;
+}
+
+.input_container input[type="date"] {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 5px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.input_container .label {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input form .input_container input[type="date"]:focus ~ .label,
+.input form .input_container input[type="date"]:valid ~ .label {
+  top: -20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.check_caption {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* banner-text  */
+.welcome_text {
+  font-family: "Benne", serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 45px;
+}
+
+.welcome_p {
+  font-size: 16px;
+  margin: 0px 20px;
+}
+
+/* image  */
+.banner {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+
+.inputs form {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto 15px;
+}
+
+.card-book {
+  width: 1000px;
+  height: 104px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: 0 auto;
+}
+
+.shadow {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+              0 0 0 2px rgb(190, 190, 190),
+              0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1366px) {
+  .banner {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1035px) {
+  .card-book {
+    max-width: 800px;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .input_container input[type="date"] {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 870px) {
+  .card-book {
+    
+    max-width: 700px;
+    height: auto;
+  }
+
+  .inputs form {
+    
+    gap: 100px;
+  }
+
+  .input_container {
+     
+    max-width: 150px;
+  }
+
+  .welcome_text {
+    font-size: 40px;
+  }
+
+  .banner {
+    height: 400px;
+  }
+}
+
+@media (max-width: 837px) {
+  .card-book {
+    
+    height: auto;
+  }
+
+  .inputs form {
+    
+    gap: 20px;
+  }
+
+  .input_container {
+    
+    max-width: 200px;
+  }
+
+  .welcome_text {
+    font-size: 30px;
+  }
+
+  .banner {
+    height: 300px;
+  }
+}
+
+
+@media (max-width: 740px) {
+  .card-book {
+    width: 100%;    
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .inputs form {
+    gap: 15px;
+    margin: 0 auto;
+  }
+
+  .input_container {
+    width: 200px;
+  }
+
+  .input_container input[type="date"],
+  .input_container button {
+    font-size: 14px;
+    padding: 3px 0;
+  }
+
+  .input_container .label {
+    font-size: 12px;
+  }
+
+  .input_container input[type="date"]:focus~.label,
+  .input_container input[type="date"]:valid~.label {
+    top: -15px;
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 675px) {
+  .card-book {
+    width: 100%;    
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .inputs form {
+    gap: 15px;
+    margin: 0 auto ;
+    width: 400px;
+     
+  }
+
+  .input_container {
+    width: 200px;
+     
+  }
+
+  .input_container input[type="date"],
+  .input_container button {
+    font-size: 14px;
+    padding: 3px 0;
+     
+  }
+
+  .input_container .label {
+    font-size: 12px;
+  }
+
+  .input_container input[type="date"]:focus~.label,
+  .input_container input[type="date"]:valid~.label {
+    top: -15px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 455px) {
+  .card-book {
+    width: 100%;    
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .inputs form{
+    gap: 15px;
+    margin: 0 auto ;
+    width: 380px;
+     
+  }
+
+  .input_container {
+    width: 200px;
+     
+  }
+
+  .input_container input[type="date"],
+  .input_container button {
+    font-size: 12px;
+    padding: 4px 0;
+     
+  }
+
+  .input_container .label {
+    font-size: 12px;
+  }
+
+  .input_container input[type="date"]:focus~.label,
+  .input_container input[type="date"]:valid~.label {
+    top: -15px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 428px) {
+  .card-book {
+    width: 90%;    
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .inputs form {
+    gap: 15px;
+    
+    width: 300px;
+    flex-direction: column;
+    
+     
+  }
+
+  .input_container {
+    width: 200px;
+    margin-left: 0px;
+    margin-right: 30px;
+     
+  }
+
+  .input_container input[type="date"],
+  .input_container button {
+    font-size: 15px;
+    padding: 4px 0;
+     
+  }
+
+  .input_container .label {
+    font-size: 12px;
+  }
+
+  .input_container input[type="date"]:focus~.label,
+  .input_container input[type="date"]:valid~.label {
+    top: -15px;
+    font-size: 15px;
+  }
+}
+
+/* @media (max-width: 740px) {
+  .card-book {
+    height: auto;
+    width: auto;
+  }
+
+  .inputs {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .input_container {
+    
+    max-width: 200px;
+  }
+
+
+} */
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome_text {
+  animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+.welcome_p {
+  animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+.input_container input:focus,
+.input_container button:focus {
+  outline: none;
+  border: none;
+}
+
+.input_container input,
+.input_container button {
+  transition: none;
+}
+
+

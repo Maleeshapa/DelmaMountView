@@ -1,0 +1,95 @@
+/* From Uiverse.io by stlyash */
+.redes {
+    width: 150px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 40%;
+    left: 0%;
+    z-index: 10000;
+    box-shadow: 1px 1px 20px 10px rgba(0, 0, 0, 0.141);
+    border-radius: 0px 10px 10px 0px ;
+}
+
+.redes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.5;
+}
+
+.redes p {
+    margin-top: 24px;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.redes a svg {
+    width: 30px;
+    fill: #ffffff;
+}
+
+.redes .facebook {
+    background-color: #006aff;
+    border-radius: 0 10px 0 0;
+}
+.redes .instagram {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #f56040);
+}
+
+.redes .tripadvisor {
+    background-color: #00af87;
+}
+
+.redes .bookingcom {
+    background-color: rgb(211, 246, 253);
+}
+
+.b-2 {
+    display: none;
+}
+
+.redes .kandyHotels {
+    background-color: #fff;
+    border-radius: 0 0 10px 0;
+}
+.redes .kandyHotels p{
+    color: #000;
+    font-weight: 900;
+}
+
+.redes a:hover {
+    width: 130%;
+    border-radius: 0 10px 10px 0;
+    opacity: 1;
+}
+
+@media (max-width:1000px) {
+    .redes{
+        width: 80px;
+    }
+    .redes a{
+        opacity: 0.6;
+    }
+    .tripadvisor p,.instagram p,.facebook p{
+        display: none;
+    }
+    .b-1{
+        display: none;
+    }
+    .b-2{
+        display:flex;
+    }
+}
+@media (max-width:768px) {
+    .redes{
+        width: 50px;
+        top: 60%;
+    }
+}

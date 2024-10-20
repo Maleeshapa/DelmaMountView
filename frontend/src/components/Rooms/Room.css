@@ -1,0 +1,114 @@
+.room-back {
+    margin: 40px 0px;
+    padding: 100px 0px;
+}
+
+.content-area-room {
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 0px 80px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-room {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-room img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-room-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-room-title {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-family: "Benne", serif;
+    font-weight: 400;
+}
+
+.card-room-description {
+    flex-grow: 1;
+    font-size: 1em;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    font-family: "Average Sans", sans-serif;
+    font-weight: 500;
+    color: #000;
+    padding: 0px 20px;
+}
+
+.card-room-description span {
+    color: rgb(219, 14, 14);
+}
+
+.card-room-price {
+    color: #000;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 1em;
+
+}
+
+.card-room-price span {
+    font-weight: 900;
+    color: #00bc4b;
+    padding-left: 10px;
+    float: right;
+}
+
+@media (max-width:900px) {
+    .card-room-description {
+        font-size: 12px;
+    }
+
+    .card-room-price {
+        font-size: 12px;
+    }
+
+    .card-room-title {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width:790px) {
+    .content-area-room {
+        display: block;
+        padding: 0px 30px;
+    }
+
+    .card-room {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .card-room-title {
+        font-size: 15px;
+    }
+
+    .card-room-description {
+        font-size: 12px;
+    }
+}

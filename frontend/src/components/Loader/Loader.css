@@ -1,0 +1,26 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222222; 
+}
+
+.loading-image {
+  width: 100px; 
+  height: 100px;
+  animation: scaleUpDown 1.5s ease-in-out infinite; 
+}
+
+
+@keyframes scaleUpDown {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: scale(1); 
+  }
+}

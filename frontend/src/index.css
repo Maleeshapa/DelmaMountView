@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.caption {
+  font-size: 30px;
+  font-family: "Benne", serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*button */
+.button {
+  color: #222;
+  padding: 10px 0px;
+  width: 150px;
+  font-size: 14px;
+  font-weight: bold;
+  background: linear-gradient(145deg,#ffc738,#ffc738, #ffeec2);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #ffc738;
+}
+
+@media (max-width:768px) {
+  .caption h1{
+    font-size: 17px;
+  }   
+}
